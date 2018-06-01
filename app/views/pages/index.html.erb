@@ -1,16 +1,4 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <%= link_to "sample app", root_path, id: "logo" %>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   root_path %></li>
-        <li><%= link_to "About",   about_path %></li>
-        <li><%= link_to "Contact",   contact_path %></li>
-        <li><%= link_to "Log in", '#' %></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+
 <body>
 	<div class="center jumbotron">
 	  <h1>Welcome to the Super App!</h1>
@@ -22,13 +10,7 @@
 	  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
 	</div>
 
-	<div class="container">
-	  <%= yield %>
-	</div>
-	<hr>
-	<%= audio_tag "pamparker.mp3", controls: true, autoplay: true %>
-
 	<%= link_to image_tag("rails.png", alt: "Rails logo") %>
-
-	<%= link_to "About", about_path %> | <%= link_to "Contact", contact_path %>
+	<hr>
+	<%= audio_tag "pamparker.mp3", controls: true %>
 </body>
