@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :artists
   root 'pages#index'
   get 'index', to: 'pages#index'
   get 'about', to: 'pages#about'
